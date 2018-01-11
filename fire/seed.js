@@ -7,13 +7,13 @@ const db = firebase.firestore()
 
 const colors = require('../data/colors')
 const small_colors = require('../data/small-colors')
-const ref = db.collection('colors4')
+const ref = db.collection('colors5')
 
 // TODO: Seed the database with colors
 
 
 
-small_colors.map( (c) => {
+colors.map( (c) => {
 
     const {name, color: {r,g, b}} = c;
     var id = cf.rgb2hex(r, g , b);
